@@ -3,7 +3,7 @@ import { Marker } from "../components/Marker.jsx";
 
 const Download = () => {
   return (
-    <section className="g7 relative pb-32 pt-24 max-lg:pb-24 max-md:py-16">
+    <section id="download" className="g7 relative pb-32 pt-24 max-lg:pb-24 max-md:py-16">
       <div className="container">
         <div className="grid  grid-cols-3 grid-rows-1 items-center ">
           <div className="col-span-3  md:col-span-1  relative ml-6 ">

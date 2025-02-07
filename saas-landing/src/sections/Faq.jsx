@@ -8,7 +8,7 @@ const Faq = () => {
 
 
   return (
-    <section className="relative">
+    <section className="relative" id="faq">
       <div className="container relative z-2 py-10  md:py-20">
         <div className="">
           <h3 className="h3 max-md:h5 max-w-640 max-lg:max-w-md mb-7 text-[#EAEDFF]">کنجکاوی گربه را نکشت، بلکه به آن پاسخ داد.</h3>
