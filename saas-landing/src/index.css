@@ -13,6 +13,7 @@
 /* //! custom css end */
 html {
   @apply bg-[#080D27];
+  scroll-behavior: smooth
 }
 
 body {
@@ -39,7 +40,7 @@ input {
 
 /* START of Typography */
 .h-num {
-  @apply text-[72px] font-bold leading-[84px];
+  @apply text-[55px] font-bold leading-[84px];
   font-family: "Inter", "sans-serif";
 }
 
@@ -186,7 +187,7 @@ input {
 /* END of Header */
 /* START of Hero */
 .hero-img_res {
-  @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:bottom-[-590px] max-md:left-[calc(50%-390px)] max-md:top-auto;
+  @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[900px] max-md:bottom-[-590px] max-md:left-[calc(50%-390px)] max-md:top-auto;
 }
 
 /* END of Hero */
@@ -234,11 +235,11 @@ input {
 }
 
 .pricing-head_btn {
-  @apply text-[16px] font-bold leading-[24px] relative z-2 h-16 flex-1 uppercase text-[#C4CBF5] transition-colors duration-500 hover:text-[#EAEDFF];
+  @apply text-[16px] font-bold leading-[24px] relative z-2 h-16 flex-1 uppercase text-[#C4CBF5] transition-colors duration-500 rounded-2xl overflow-hidden hover:text-[#EAEDFF];
 }
 
 .pricing-head_btn_before {
-  @apply before:absolute before:-top-16 before:left-9 before:right-9 before:bg-[#1959AD] before:blur-xl before:content-[""];
+  @apply before:absolute before:-top-16 before:left-9 before:right-9 before:bg-[#1959AD] before:rounded-2xl before:blur-xl before:content-[""];
 }
 
 .pricing-bg {

@@ -8,7 +8,7 @@ const Testimonials = () => {
 
   return (
     <section className="relative z-2 py-24 md:py-28 lg:py-20">
-      <div className="container block lg:flex lg:flex-col">
+      <div className="container block lg:flex lg:flex-col  lg:py-20">
         <div className="testimonials_head-res relative z-2 mr-20 flex-300">
           <p className="caption mb-5 max-md:mb-2.5">دیوار عشق</p>
           <h3 className="h3 max-md:h5 text-[#EAEDFF]">گفتارهایی از طرفداران ما</h3>

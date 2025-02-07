@@ -1,18 +1,13 @@
-import { Link as LinkScroll } from "react-scroll";
 import { useEffect, useState } from "react";
 
-const NavLink = ({ title, clickHandler }) => (
-  <LinkScroll
+const NavLink = ({ title, clickHandler, href }) => (
+  <a
+    href={href}
     onClick={clickHandler}
-    to={title}
-    offset={-100}
-    spy
-    smooth
-    activeClass="nav-active"
     className="base-bold text-[#EAEDFF] uppercase transition-colors duration-500 cursor-pointer hover:text-[#2EF2FF] max-lg:my-4 max-lg:h5"
   >
     {title}
-  </LinkScroll>
+  </a>
 );
 
 const Header = () => {
@@ -48,17 +43,14 @@ const Header = () => {
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="nav-li">
-                  <NavLink title="خدمات" clickHandler={() => setIsOpen(prev => !prev)} />
+                  <NavLink title="خدمات" href="#services" clickHandler={() => setIsOpen(prev => !prev)} />
                   <div className="dot" />
-                  <NavLink title="قیمت" clickHandler={() => setIsOpen(prev => !prev)} />
+                  <NavLink title="قیمت" href="#price" clickHandler={() => setIsOpen(prev => !prev)} />
                 </li>
 
                 <li className="nav-logo">
-                  <LinkScroll
-                    to="hero"
-                    offset={-250}
-                    spy
-                    smooth
+                  <a
+                    href="#hero"
                     className="max-lg:hidden transition-transform duration-500 cursor-pointer"
                   >
                     <img
@@ -66,13 +58,13 @@ const Header = () => {
                       className="rounded-full h-[60px] w-[60px]"
                       alt="logo"
                     />
-                  </LinkScroll>
+                  </a>
                 </li>
 
                 <li className="nav-li">
-                  <NavLink title="پرسش" clickHandler={() => setIsOpen(prev => !prev)} />
+                  <NavLink title="پرسش" href='#faq' clickHandler={() => setIsOpen(prev => !prev)} />
                   <div className="dot" />
-                  <NavLink title="دانلود" clickHandler={() => setIsOpen(prev => !prev)} />
+                  <NavLink title="دانلود" href="#download" clickHandler={() => setIsOpen(prev => !prev)} />
                 </li>
               </ul>
             </nav>
