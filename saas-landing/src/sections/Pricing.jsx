@@ -54,7 +54,7 @@ const Pricing = () => {
                   className={`relative flex flex-col items-center ${index === 1 ? "pt-24" : "pt-12"}`}
                 >
                   <div
-                    className={`small-1 rounded-20 relative z-2 mx-auto mb-6 border-2 px-4 py-1.5 uppercase ${index === 1 ? "border-[#C8EA80] text-[#C8EA80]" : "border-[#2EF2FF] text-[#2EF2FF]"}`}
+                    className={`z-20  small-1 rounded-20 relative mx-auto mb-6 border-2 px-4 py-1.5 uppercase ${index === 1 ? "border-[#C8EA80] text-[#C8EA80]" : "border-[#2EF2FF] text-[#2EF2FF]"}`}
                   >
                     {plan.title}
                   </div>
