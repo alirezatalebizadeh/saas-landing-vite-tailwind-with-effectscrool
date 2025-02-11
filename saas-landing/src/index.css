@@ -2,10 +2,10 @@
 
 /* //! custom css start */
 .poppins {
-  font-family: "Poppins", "sans-serif";
+  font-family: "IRANYekanX-Regular" !important;
 }
 .inter {
-  font-family: "Inter", "sans-serif";
+  font-family: "IRANYekanX-Regular";
 }
 
 @font-face {
@@ -16,17 +16,6 @@
 @font-face {
   font-family: "IRANYekanX-Bold";
   src: url("/fonts/woff/IRANYekanX-Bold.woff") format("woff");
-}
-
-.font-robert-regular {
-  font-family: "IRANYekanX-Regular" !important;
-}
-.font-general {
-  font-family: "IRANYekanX-Regular" !important;
-}
-
-.font-circular-web {
-  font-family: "IRANYekanX-Regular" !important;
 }
 
 h1,
@@ -80,15 +69,15 @@ input {
 }
 
 .h1 {
-  @apply text-[84px] font-black leading-[84px] tracking-[-0.03em];
+  @apply font-black leading-[84px] tracking-[-0.03em] text-[60px];
 }
 
 .h2 {
-  @apply text-[64px] font-black leading-[64px];
+  @apply font-black leading-[64px] text-[50px];
 }
 
 .h3 {
-  @apply text-[48px] font-semibold leading-[56px] tracking-[-0.02em];
+  @apply font-semibold leading-[56px] tracking-[-0.02em] text-[45px];
 }
 
 .h4 {
