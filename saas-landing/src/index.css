@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@import url("https://fonts.googleapis.com/cs[#0C1838]?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 /* //! custom css start */
 .poppins {
   font-family: "Poppins", "sans-serif";
@@ -10,16 +8,53 @@
   font-family: "Inter", "sans-serif";
 }
 
+@font-face {
+  font-family: "IRANYekanX-Regular";
+  src: url("/fonts/woff/IRANYekanX-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IRANYekanX-Bold";
+  src: url("/fonts/woff/IRANYekanX-Bold.woff") format("woff");
+}
+
+.font-robert-regular {
+  font-family: "IRANYekanX-Regular" !important;
+}
+.font-general {
+  font-family: "IRANYekanX-Regular" !important;
+}
+
+.font-circular-web {
+  font-family: "IRANYekanX-Regular" !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
+  font-family: "IRANYekanX-Bold" !important;
+}
+
+a,
+p,
+span {
+  font-family: "IRANYekanX-Regular" !important;
+}
+
 /* //! custom css end */
 html {
   @apply bg-[#080D27];
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 body {
   @apply text-[16px] tracking-[-0.03em] text-[#C4CBF5];
   direction: rtl;
-  font-family: "Poppins", "sans-serif";
+  font-family: "IRANYekanX-Regular" !important;
 }
 
 a {
